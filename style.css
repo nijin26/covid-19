@@ -59,7 +59,7 @@ header > h2 {
 main {
   width: 100%;
   height: max-content;
-  background: url("./daniel-schludi-mAGZNECMcUg-unsplash.jpg") no-repeat center fixed rgba(0, 0, 0, 0.45);
+  background: url('./assets/daniel-schludi-mAGZNECMcUg-unsplash.jpg') no-repeat center fixed rgba(0, 0, 0, 0.45);
   background-size: cover;
   background-blend-mode: darken;
   padding: 30px;
