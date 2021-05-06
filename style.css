@@ -44,6 +44,10 @@ header > h2 {
   text-align: center;
 }
 
+.inner__contact{
+ margin: 1.2rem;
+}
+
 .img__bottom{
   display: flex;
   justify-content: center;
@@ -55,7 +59,7 @@ header > h2 {
 main {
   width: 100%;
   height: max-content;
-  background: url("./daniel-schludi-mAGZNECMcUg-unsplash.jpg") no-repeat center fixed rgba(0, 0, 0, 0.45);
+  background: url('./assets/daniel-schludi-mAGZNECMcUg-unsplash.jpg') no-repeat center fixed rgba(0, 0, 0, 0.45);
   background-size: cover;
   background-blend-mode: darken;
   padding: 30px;
@@ -119,5 +123,5 @@ a {
 }
 
 .phone__btn:hover{
-  background: gray;
+  background: rgb(194, 193, 193);
 }
