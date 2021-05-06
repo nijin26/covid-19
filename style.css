@@ -8,18 +8,23 @@ html {
   font-size: 62.5%;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Manjari-Regular";
   src: url("/assets/Manjari-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Kartika";
+  src: url("assets/Kartika.ttf");
+} */
+
 body {
-  font-family: "Manjari-Regular";
+  font-family: "Monument Extended", sans-serif;
 }
 
 header {
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   background: url("/assets/header.jpg") no-repeat center fixed;
   background-size: cover;
   display: flex;
@@ -28,7 +33,7 @@ header {
   font-size: 3rem;
 }
 
-header > a {
+header > p {
   background-color: #fff;
   padding: 16px;
   border-radius: 20px;
@@ -37,61 +42,42 @@ header > a {
 
 main {
   width: 100%;
-  height: 75vh;
-  background: url("assets/doctor.jpg") no-repeat center fixed rgba(0, 0, 0, 0.8);
+  height: max-content;
+  background: url("assets/doctor.jpg") no-repeat center fixed rgba(0, 0, 0, 0.9);
   background-size: cover;
   background-blend-mode: darken;
   padding: 30px;
   font-size: 2.1rem;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.938);
   font-weight: bold;
+  line-height: 160%;
   position: relative;
 }
 
-main > p {
-  color: #fff;
-  position: absolute;
-  top: 0;
-  margin: 0;
-  z-index: -1;
+h2 {
+  margin: 20px auto;
 }
 
-.hiders {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+.contact {
+  font-family: sans-serif;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
-.hiders p {
-  position: relative;
-  clear: both;
-  margin: 0;
-  background: rgba(0, 0, 0, 0.8);
-  float: right; /* makes animation go left-to-right */
-  width: 0; /* graceful degradation: if animation doesn't work, these are invisible by default */
-  animation: typing 2s steps(30, end);
-  animation-fill-mode: both; /* load first keyframe on page load, leave on last frame at end */
+a {
+  text-decoration: none;
+  color: wheat;
 }
 
-.hiders p:nth-child(2) {
-  animation-delay: 2s;
-}
-.hiders p:nth-child(3) {
-  animation-delay: 4s;
-}
-.hiders p:nth-child(4) {
-  animation-delay: 6s;
-}
-.hiders p:nth-child(5) {
-  animation-delay: 8s;
-}
-
-@keyframes typing {
-  from {
-    width: 100%;
+@media screen and (min-width: 1600px) {
+  header {
+    height: 20vh;
   }
-  to {
-    width: 0;
+  main {
+    height: 80vh;
+    text-align: center;
   }
 }
