@@ -20,10 +20,11 @@ html {
 
 body {
   font-family: "Monument Extended", sans-serif;
+  overflow-x: hidden;
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   height: 20vh;
   background: url("assets/header.jpg") no-repeat center fixed;
   background-size: cover;
@@ -41,13 +42,14 @@ header > p {
 }
 
 main {
-  width: 100%;
+  width: 100vw;
   height: max-content;
   background: url("assets/doctor.jpg") no-repeat center fixed rgba(0, 0, 0, 0.9);
   background-size: cover;
   background-blend-mode: darken;
   padding: 30px;
-  font-size: 2.1rem;
+  margin: 0 auto;
+  font-size: 1.8rem;
   color: rgba(255, 255, 255, 0.938);
   font-weight: bold;
   line-height: 160%;
