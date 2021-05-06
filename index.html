@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
-      defer
-    ></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <link rel="stylesheet" href="style.css" />
     <title>Covid Message</title>
   </head>
@@ -40,7 +38,7 @@
         <span
           >ഇന്ന് കോവിഡ് ബാധിധരായിട്ടുള്ള കുടുംബവും അവരെ
           സഹായിച്ചിരുന്നഅയല്പക്കകാരായ വീട്ടുകാരും കോറണ്ടയ്നിൽ കഴിയുന്ന
-          അവസ്ഥയിലേക്ക്എത്തികൊണ്ടിരിക്കുകയാണ്.</span
+          അവസ്ഥയിലേക്ക് എത്തി കൊണ്ടിരിക്കുകയാണ്.</span
         >
       </div>
       <div class="line">
@@ -59,7 +57,7 @@
         <span
           >ഇതിനു വരുന്ന പണം ഓൺലൈൻ ട്രാൻസ്ഫർ രീതികളായ ഗൂഗിൾപേയോ മറ്റു നൂതന
           സംവിധാനം വഴിയോ കനിവ്ചാരിറ്റബിൾ ട്രസ്റ്റിന്റെ മെമ്പർമാരുടെ
-          എകൗണ്ടിലേക്ക് ട്രാൻസ്ഫർചെയ്യാനുള്ള സൗകര്യവുംഒരുക്കിയിരിക്കുന്നു.</span
+          എകൗണ്ടിലേക്ക് ട്രാൻസ്ഫർ ചെയ്യാനുള്ള സൗകര്യവും ഒരുക്കിയിരിക്കുന്നു.</span
         >
       </div>
       <div class="line">
@@ -72,50 +70,35 @@
       <h2 style="text-align:center;text-decoration: underline;margin-top: 4rem;">Contact Us On:</h2>
       <div class="contact">
      <div class="inner__contact">
-      <button ><a href="tel:+918606106354"><img src="./assets/download (3).png" width="50px"/></a></button>
+      <button ><a href="tel:+918606106354"><img src="assets/download (3).png" width="50px"/></a></button>
       <button class="phone__btn"><a href="tel:+918606106354">8606106354</a></button>
     
      </div>
 
      <div class="inner__contact">
-      <button ><a href="tel:+918606870436"><img src="./assets/download (3).png" width="50px"/></a></button>
+      <button ><a href="tel:+918606870436"><img src="assets/download (3).png" width="50px"/></a></button>
       <button class="phone__btn"><a href="tel:+918606870436">8606870436</a></button>
      
      </div>
 
 
      <div class="inner__contact">
-      <button ><a href="tel:+919645569677"><img src="./assets/download (3).png" width="50px"/></a></button>
+      <button ><a href="tel:+919645569677"><img src="assets/download (3).png" width="50px"/></a></button>
       <button class="phone__btn"><a href="tel:+919645569677">9645569677</a></button>
       
      </div>
 
 
      <div class="inner__contact">
-      <button ><a href="tel:+919745929359"><img src="./assets/download (3).png" width="50px"/></a></button>
+      <button ><a href="tel:+919745929359"><img src="assets/download (3).png" width="50px"/></a></button>
       <button class="phone__btn"><a href="tel:+919745929359">9745929359</a></button>
     
      </div>
 
-
-
-
-   
-
-    
     </main>
-    <!-- <script defer>
-      const textrev = gsap.timeline();
+    <script>
 
-      textrev.from(".line span", 1.8, {
-        y: 200,
-        ease: "power4.out",
-        delay: 1,
-        skewY: 10,
-        stagger: {
-          amount: 0.4,
-        },
-      });
-    </script> -->
+      ScrollReveal().reveal('.line', {interval:1000, easing: 'ease-in' });
+    </script>
   </body>
 </html>
