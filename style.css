@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
 }
 
@@ -19,14 +20,15 @@ html {
 } */
 
 body {
+
   font-family: "Monument Extended", sans-serif;
-  overflow-x: hidden;
 }
 
 header {
-  width: 100vw;
-  height: 20vh;
-  background: url("assets/header.jpg") no-repeat center fixed;
+  width: 100%;
+  height: 90vh;
+
+  background: url("https://images.unsplash.com/photo-1584483766114-2cea6facdf57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80") no-repeat center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -34,22 +36,30 @@ header {
   font-size: 3rem;
 }
 
-header > p {
+
+header > h2 {
   background-color: #fff;
   padding: 16px;
   border-radius: 20px;
   text-align: center;
 }
 
+.img__bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
 main {
-  width: 100vw;
+  width: 100%;
   height: max-content;
-  background: url("assets/doctor.jpg") no-repeat center fixed rgba(0, 0, 0, 0.9);
+  background: url("./daniel-schludi-mAGZNECMcUg-unsplash.jpg") no-repeat center fixed rgba(0, 0, 0, 0.45);
   background-size: cover;
   background-blend-mode: darken;
   padding: 30px;
-  margin: 0 auto;
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   color: rgba(255, 255, 255, 0.938);
   font-weight: bold;
   line-height: 160%;
@@ -66,7 +76,12 @@ h2 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  
   align-content: space-around;
+}
+
+.phone__btn{
+  margin: 1.2rem;
 }
 
 a {
@@ -80,8 +95,29 @@ a {
   }
   main {
     height: 80vh;
-  }
-  h2 {
     text-align: center;
   }
+}
+
+.inner__contact{
+  display: flex;
+  align-items: center;
+}
+
+
+.phone__btn{
+  padding:1.5rem;
+  border-radius:1.5rem;
+  border:0;
+  cursor:pointer;
+  background: white;
+}
+
+.phone__btn>a{
+  color:black;
+  font-weight: 900;
+}
+
+.phone__btn:hover{
+  background: gray;
 }
